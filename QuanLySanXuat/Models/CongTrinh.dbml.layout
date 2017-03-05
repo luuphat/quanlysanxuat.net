@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CongTrinh">
+  <DataContextMoniker Name="/CongTrinhDataContext" />
+  <nestedChildShapes>
+    <classShape Id="15cf0f89-f78b-4f82-aed7-3c7900ec1983" absoluteBounds="1.5, 1, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/CongTrinhDataContext/CongTrinh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="418f2c88-d1e1-423a-b0b2-62852fdf2858" absoluteBounds="1.5149999999999997, 1.46, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

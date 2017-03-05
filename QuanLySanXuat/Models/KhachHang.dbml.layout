@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="KhachHang">
+  <DataContextMoniker Name="/KhachHangDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fc21449e-bbc4-4809-ad9d-d585bc06d72b" absoluteBounds="1.75, 1, 2, 2.5401025390625">
+      <DataClassMoniker Name="/KhachHangDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bbd2d6f6-c78a-4591-bf7b-f9faf271de0f" absoluteBounds="1.7649999999999997, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

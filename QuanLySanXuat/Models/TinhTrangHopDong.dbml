@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLSX" Class="TinhTrangHopDongDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=QLSX;Integrated Security=True" SettingsObjectName="QuanLySanXuat.Properties.Settings" SettingsPropertyName="QLSXConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TinhTrangHopDong" Member="TinhTrangHopDongs">
+    <Type Name="TinhTrangHopDong" Id="ID1">
+      <Column Name="TinhTrangID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaTinhTrang" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="TenTinhTrang" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SapXep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.TinhTrangHopDong_getList" Method="TinhTrangHopDong_getList">
+    <Parameter Name="searchKey" Type="System.String" DbType="NVarChar(200)" />
+    <ElementType IdRef="ID1" />
+  </Function>
+</Database>

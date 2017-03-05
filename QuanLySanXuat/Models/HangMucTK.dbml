@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLSX" Class="HangMucTKDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=QLSX;Integrated Security=True" SettingsObjectName="QuanLySanXuat.Properties.Settings" SettingsPropertyName="QLSXConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ChiTietHangMucTK" Member="ChiTietHangMucTKs">
+    <Type Name="ChiTietHangMucTK" Id="ID1">
+      <Column Name="MaChiTietTK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaHangMucTK" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaKetCauChiTiet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TLDonVi" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="TLTong" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GiaTri" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HangMucTK" Member="HangMucTKs">
+    <Type Name="HangMucTK" Id="ID2">
+      <Column Name="MaHangMucTK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenHangMucTK" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CongTrinhID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaHieuCT" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.ChiTietHangMucTK_add" Method="ChiTietHangMucTK_add">
+    <Parameter Name="MaHangMucTK" Parameter="maHangMucTK" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaKetCauChiTiet" Parameter="maKetCauChiTiet" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SoLuong" Parameter="soLuong" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TLDonVi" Parameter="tLDonVi" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="TLTong" Parameter="tLTong" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="DonGia" Parameter="donGia" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="GiaTri" Parameter="giaTri" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="GhiChu" Parameter="ghiChu" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ChiTietHangMucTK_update" Method="ChiTietHangMucTK_update">
+    <Parameter Name="maChiTietTK" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaHangMucTK" Parameter="maHangMucTK" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaKetCauChiTiet" Parameter="maKetCauChiTiet" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SoLuong" Parameter="soLuong" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TLDonVi" Parameter="tLDonVi" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="TLTong" Parameter="tLTong" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="DonGia" Parameter="donGia" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="GiaTri" Parameter="giaTri" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="GhiChu" Parameter="ghiChu" Type="System.String" DbType="NVarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ChiTietHangMucTK_delete" Method="ChiTietHangMucTK_delete">
+    <Parameter Name="maChiTietTK" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ChiTietHangMucTK_getList" Method="ChiTietHangMucTK_getList">
+    <Parameter Name="maChiTietTK" Type="System.Int32" DbType="Int" />
+    <Parameter Name="maHangMucTK" Type="System.Int32" DbType="Int" />
+    <Parameter Name="searchKey" Type="System.String" DbType="NVarChar(200)" />
+    <ElementType IdRef="ID1" />
+  </Function>
+  <Function Name="dbo.HangMucTK_add" Method="HangMucTK_add">
+    <Parameter Name="TenHangMucTK" Parameter="tenHangMucTK" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="CongTrinhID" Parameter="congTrinhID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaHieuCT" Parameter="maHieuCT" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.HangMucTK_update" Method="HangMucTK_update">
+    <Parameter Name="MaHangMucTK" Parameter="maHangMucTK" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TenHangMucTK" Parameter="tenHangMucTK" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="CongTrinhID" Parameter="congTrinhID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaHieuCT" Parameter="maHieuCT" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.HangMucTK_delete" Method="HangMucTK_delete">
+    <Parameter Name="MaHangMucTK" Parameter="maHangMucTK" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.HangMucTK_getList" Method="HangMucTK_getList">
+    <Parameter Name="MaHangMucTK" Parameter="maHangMucTK" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CongTrinhID" Parameter="congTrinhID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaHieuCT" Parameter="maHieuCT" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="searchKey" Type="System.String" DbType="NVarChar(200)" />
+    <ElementType IdRef="ID2" />
+  </Function>
+</Database>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLSX" Class="KhachHangDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=QLSX;Integrated Security=True" SettingsObjectName="QuanLySanXuat.Properties.Settings" SettingsPropertyName="QLSXConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.KhachHang" Member="KhachHangs">
+    <Type Name="KhachHang" Id="ID1">
+      <Column Name="MaKhachHang" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenKhachHang" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DienThoai" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Website" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.KhachHang_add" Method="KhachHang_add">
+    <Parameter Name="TenKhachHang" Parameter="tenKhachHang" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="DiaChi" Parameter="diaChi" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="DienThoai" Parameter="dienThoai" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Fax" Parameter="fax" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Website" Parameter="website" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.KhachHang_update" Method="KhachHang_update">
+    <Parameter Name="MaKhachHang" Parameter="maKhachHang" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TenKhachHang" Parameter="tenKhachHang" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="DiaChi" Parameter="diaChi" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="DienThoai" Parameter="dienThoai" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Fax" Parameter="fax" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Website" Parameter="website" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.KhachHang_delete" Method="KhachHang_delete">
+    <Parameter Name="MaKhachHang" Parameter="maKhachHang" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.KhachHang_getList" Method="KhachHang_getList">
+    <Parameter Name="maKhachHang" Type="System.Int32" DbType="Int" />
+    <Parameter Name="KeySearch" Parameter="keySearch" Type="System.String" DbType="NVarChar(200)" />
+    <ElementType IdRef="ID1" />
+  </Function>
+</Database>

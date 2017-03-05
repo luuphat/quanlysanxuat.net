@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLSX" Class="CongTrinhDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=QLSX;Integrated Security=True" SettingsObjectName="QuanLySanXuat.Properties.Settings" SettingsPropertyName="QLSXConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CongTrinh" Member="CongTrinhs">
+    <Type Name="CongTrinh" Id="ID1">
+      <Column Name="CongTrinhID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenCongTrinh" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="MaHieuCT" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SoHopDong" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="MaKhachHang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NgayKy" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NgayBatDauCT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgayKetThucCT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TinhTrangID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GiaTriHD" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TrongLuongTK" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="TrongLuongTT" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="HoanCong" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="QuyetToanKH" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.CongTrinh_add" Method="CongTrinh_add">
+    <Parameter Name="TenCongTrinh" Parameter="tenCongTrinh" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="MaHieuCT" Parameter="maHieuCT" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="SoHopDong" Parameter="soHopDong" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="MaKhachHang" Parameter="maKhachHang" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NgayKy" Parameter="ngayKy" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="NgayBatDauCT" Parameter="ngayBatDauCT" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="NgayKetThucCT" Parameter="ngayKetThucCT" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="TinhTrangID" Parameter="tinhTrangID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="GiaTriHD" Parameter="giaTriHD" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="GhiChu" Parameter="ghiChu" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CongTrinh_Copy_ThietKe2ThucTe" Method="CongTrinh_Copy_ThietKe2ThucTe">
+    <Parameter Name="CongTrinhID" Parameter="congTrinhID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CongTrinh_delete" Method="CongTrinh_delete">
+    <Parameter Name="CongTrinhID" Parameter="congTrinhID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CongTrinh_getList" Method="CongTrinh_getList">
+    <Parameter Name="CongTrinhID" Parameter="congTrinhID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="maKhachHang" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TinhTrangID" Parameter="tinhTrangID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TuNgay" Parameter="tuNgay" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="DenNgay" Parameter="denNgay" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="SearchKey" Parameter="searchKey" Type="System.String" DbType="NVarChar(200)" />
+    <ElementType IdRef="ID1" />
+  </Function>
+  <Function Name="dbo.CongTrinh_update" Method="CongTrinh_update">
+    <Parameter Name="CongTrinhID" Parameter="congTrinhID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TenCongTrinh" Parameter="tenCongTrinh" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="MaHieuCT" Parameter="maHieuCT" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="SoHopDong" Parameter="soHopDong" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="MaKhachHang" Parameter="maKhachHang" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NgayKy" Parameter="ngayKy" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="NgayBatDauCT" Parameter="ngayBatDauCT" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="NgayKetThucCT" Parameter="ngayKetThucCT" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="TinhTrangID" Parameter="tinhTrangID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="GiaTriHD" Parameter="giaTriHD" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="GhiChu" Parameter="ghiChu" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="TrongLuongTK" Parameter="trongLuongTK" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="TrongLuongTT" Parameter="trongLuongTT" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="HoanCong" Parameter="hoanCong" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="QuyetToanKH" Parameter="quyetToanKH" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

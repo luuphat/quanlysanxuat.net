@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="HangMucTT">
+  <DataContextMoniker Name="/HangMucTTDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9f49c644-3e02-41d7-8219-497ecab4aa35" absoluteBounds="0.5, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/HangMucTTDataContext/HangMucTT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5976c37e-20fe-46ca-bfc7-11c74a0f54ac" absoluteBounds="0.51499999999999968, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fb1891b8-57d9-41b9-b0e1-d15cb580c5b5" absoluteBounds="3, 0.875, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/HangMucTTDataContext/ChiTietHangMucTT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1578be8-fd58-4aae-bb95-86112757277e" absoluteBounds="3.0149999999999997, 1.335, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

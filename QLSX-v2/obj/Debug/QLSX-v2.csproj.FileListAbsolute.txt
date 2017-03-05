@@ -1,0 +1,16 @@
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\bin\Debug\QLSX-v2.exe.config
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\bin\Debug\QLSX-v2.exe
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\bin\Debug\QLSX-v2.pdb
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\obj\Debug\QLSX.Properties.Resources.resources
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\obj\Debug\QLSX-v2.csproj.GenerateResource.Cache
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\obj\Debug\QLSX-v2.exe
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\obj\Debug\QLSX-v2.pdb
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\obj\Debug\QLSX.frmMain.resources
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\obj\Debug\QLSX.Forms.frmCongTrinh.resources
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\obj\Debug\QLSX.Forms.frmKhachHang.resources
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\obj\Debug\QLSX-v2.csprojResolveAssemblyReference.cache
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\bin\Debug\C1.Win.C1FlexGrid.2.dll
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\bin\Debug\C1.Win.C1FlexGrid.2.xml
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\obj\Debug\QLSX-v2.exe.licenses
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\bin\Debug\C1DataTree.dll
+D:\svn\OutSourcing\QuanLySanXuat\QLSX-v2\bin\Debug\C1DataTree.pdb

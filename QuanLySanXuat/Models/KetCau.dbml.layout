@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="KetCau">
+  <DataContextMoniker Name="/KetCauDataContext" />
+  <nestedChildShapes>
+    <classShape Id="529c261d-6fe6-442b-b956-8b39d3897f89" absoluteBounds="3.5, 2.875, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/KetCauDataContext/ChiTietKetCau" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e41ef3b4-a5a0-4531-b5b3-df757afbc558" absoluteBounds="3.5149999999999997, 3.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46c8da5e-a48a-4ef2-a4a4-831a85199475" absoluteBounds="0.5, 0.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/KetCauDataContext/NhomKetCau" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e6772ea-74e9-4549-bab3-610443648e02" absoluteBounds="0.51499999999999968, 1.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af496d09-372b-4d11-9a6a-85faed0927de" absoluteBounds="3.25, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/KetCauDataContext/KetCau" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e0e601b-29c1-4125-8f8e-56aad35ad497" absoluteBounds="3.2649999999999997, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

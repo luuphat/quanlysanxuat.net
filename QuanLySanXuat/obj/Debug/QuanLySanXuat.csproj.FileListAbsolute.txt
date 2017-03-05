@@ -1,0 +1,17 @@
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\bin\Debug\QuanLySanXuat.exe.config
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\bin\Debug\QuanLySanXuat.exe
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\bin\Debug\QuanLySanXuat.pdb
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\obj\Debug\QuanLySanXuat.csprojResolveAssemblyReference.cache
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\obj\Debug\QuanLySanXuat.Forms.frmCongTrinh.resources
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\obj\Debug\QuanLySanXuat.Forms.frmKetCau.resources
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\obj\Debug\QuanLySanXuat.Forms.frmKhachHang.resources
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\obj\Debug\QuanLySanXuat.Forms.frmNhomKetCau.resources
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\obj\Debug\QuanLySanXuat.frmMain.resources
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\obj\Debug\QuanLySanXuat.Properties.Resources.resources
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\obj\Debug\QuanLySanXuat.csproj.GenerateResource.Cache
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\obj\Debug\QuanLySanXuat.exe
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\obj\Debug\QuanLySanXuat.pdb
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\bin\Debug\EntityFramework.dll
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\bin\Debug\EntityFramework.SqlServer.dll
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\bin\Debug\EntityFramework.xml
+D:\svn\OutSourcing\QuanLySanXuat\QuanLySanXuat\bin\Debug\EntityFramework.SqlServer.xml

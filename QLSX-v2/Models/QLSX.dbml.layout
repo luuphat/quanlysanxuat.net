@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="QLSX">
+  <DataContextMoniker Name="/QLSXDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c2554123-b1d5-49b3-88d0-dda0fe555487" absoluteBounds="2.75, 0.5, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/QLSXDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c84cf805-042d-4aa8-9dee-882d6df887d3" absoluteBounds="2.7650000000000006, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9483cfd2-06c3-46e6-b72a-e75b4d0db1a5" absoluteBounds="0.5, 2.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/QLSXDataContext/HangMuc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0b0f54b-6c49-46da-962c-e6d2782d461c" absoluteBounds="0.51500000000000012, 3.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c4712b45-e3e0-46f6-aa80-2bb2825e6086" absoluteBounds="5.875, 1.125, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/QLSXDataContext/ChiTietHangMuc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0895dd44-5255-487b-946a-8d42f6445455" absoluteBounds="5.89, 1.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4433e447-a20a-42de-9cc5-0e9edb2afd4e" absoluteBounds="0.5, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/QLSXDataContext/TinhTrangHopDong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="856cd791-699f-4695-8320-0fa3035077be" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c9f4f6b4-afdc-40e3-a42b-8b6fbb62e2ba" absoluteBounds="2.875, 3.25, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/QLSXDataContext/CongTrinh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1f68949-54ff-4a8c-9dd2-c454fa7709d3" absoluteBounds="2.8899999999999997, 3.71, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

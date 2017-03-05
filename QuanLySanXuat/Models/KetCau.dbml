@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLSX" Class="KetCauDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=QLSX;Integrated Security=True" SettingsObjectName="QuanLySanXuat.Properties.Settings" SettingsPropertyName="QLSXConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ChiTietKetCau" Member="ChiTietKetCaus">
+    <Type Name="ChiTietKetCau" Id="ID1">
+      <Column Name="MaChiTietKetCau" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChiTietKetCau" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="MaKetCau" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QuyCach" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ChieuDai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChieuRong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TyTrong" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Gia" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NhomKetCau" Member="NhomKetCaus">
+    <Type Name="NhomKetCau" Id="ID3">
+      <Column Name="MaNhomKetCau" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenNhomKetCau" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SapXep" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KetCau" Member="KetCaus">
+    <Type Name="KetCau" Id="ID2">
+      <Column Name="MaKetCau" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenKetCau" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhomKetCau" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HinhAnh" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.ChiTietKetCau_add" Method="ChiTietKetCau_add">
+    <Parameter Name="MaKetCau" Parameter="maKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TenChiTietKetCau" Parameter="tenChiTietKetCau" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="QuyCach" Parameter="quyCach" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="ChieuDai" Parameter="chieuDai" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ChieuRong" Parameter="chieuRong" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TyTrong" Parameter="tyTrong" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="Gia" Parameter="gia" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ChiTietKetCau_delete" Method="ChiTietKetCau_delete">
+    <Parameter Name="maChiTietKetCau" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ChiTietKetCau_update" Method="ChiTietKetCau_update">
+    <Parameter Name="maChiTietKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaKetCau" Parameter="maKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TenChiTietKetCau" Parameter="tenChiTietKetCau" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="QuyCach" Parameter="quyCach" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="ChieuDai" Parameter="chieuDai" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ChieuRong" Parameter="chieuRong" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TyTrong" Parameter="tyTrong" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="Gia" Parameter="gia" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ChiTietKetCau_getList" Method="ChiTietKetCau_getList">
+    <Parameter Name="maChiTietKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="maKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="searchKey" Type="System.String" DbType="NVarChar(200)" />
+    <ElementType IdRef="ID1" />
+  </Function>
+  <Function Name="dbo.KetCau_add" Method="KetCau_add">
+    <Parameter Name="TenKetCau" Parameter="tenKetCau" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="MaNhomKetCau" Parameter="maNhomKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MoTa" Parameter="moTa" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="HinhAnh" Parameter="hinhAnh" Type="System.Data.Linq.Binary" DbType="Image" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.KetCau_update" Method="KetCau_update">
+    <Parameter Name="maKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TenKetCau" Parameter="tenKetCau" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="MaNhomKetCau" Parameter="maNhomKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MoTa" Parameter="moTa" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="HinhAnh" Parameter="hinhAnh" Type="System.Data.Linq.Binary" DbType="Image" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.KetCau_delete" Method="KetCau_delete">
+    <Parameter Name="maKetCau" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.KetCau_getList" Method="KetCau_getList">
+    <Parameter Name="maKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="maNhomKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="searchKey" Type="System.String" DbType="NVarChar(200)" />
+    <ElementType IdRef="ID2" />
+  </Function>
+  <Function Name="dbo.NhomKetCau_add" Method="NhomKetCau_add">
+    <Parameter Name="TenNhomKetCau" Parameter="tenNhomKetCau" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="SapXep" Parameter="sapXep" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.NhomKetCau_update" Method="NhomKetCau_update">
+    <Parameter Name="maNhomKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TenNhomKetCau" Parameter="tenNhomKetCau" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="SapXep" Parameter="sapXep" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.NhomKetCau_delete" Method="NhomKetCau_delete">
+    <Parameter Name="maNhomKetCau" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.NhomKetCau_getList" Method="NhomKetCau_getList">
+    <Parameter Name="MaNhomKetCau" Parameter="maNhomKetCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="searchKey" Type="System.String" DbType="NVarChar(200)" />
+    <ElementType IdRef="ID3" />
+  </Function>
+</Database>

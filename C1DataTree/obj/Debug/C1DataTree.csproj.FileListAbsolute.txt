@@ -1,0 +1,8 @@
+D:\svn\OutSourcing\QuanLySanXuat\C1DataTree\bin\Debug\C1DataTree.dll
+D:\svn\OutSourcing\QuanLySanXuat\C1DataTree\bin\Debug\C1DataTree.pdb
+D:\svn\OutSourcing\QuanLySanXuat\C1DataTree\bin\Debug\C1.Win.C1FlexGrid.2.dll
+D:\svn\OutSourcing\QuanLySanXuat\C1DataTree\bin\Debug\C1.Win.C1FlexGrid.2.xml
+D:\svn\OutSourcing\QuanLySanXuat\C1DataTree\obj\Debug\C1DataTree.dll.licenses
+D:\svn\OutSourcing\QuanLySanXuat\C1DataTree\obj\Debug\C1DataTree.dll
+D:\svn\OutSourcing\QuanLySanXuat\C1DataTree\obj\Debug\C1DataTree.pdb
+D:\svn\OutSourcing\QuanLySanXuat\C1DataTree\obj\Debug\C1DataTree.csprojResolveAssemblyReference.cache
